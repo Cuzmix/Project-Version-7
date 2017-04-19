@@ -1,0 +1,32 @@
+@* addProductForm defined above is the parameter passed to this view by the controller *@
+@import helper._
+
+@(UsersLibraryForm: play.data.Form[models.Users_library], user: models.users.Users)
+
+@* helpers will be used to create the form dynamically, though static HTML form element also work. *@
+
+
+@main("Retun Books/Exam Paper", user) {
+	<h3>Add a new Product</h3>
+
+
+	<!-- Use the views.html.helpers package to create the form -->
+	@form(action = routes.HomeController.addReturnSubmit(user.getEmail), 'class -> "form-horizontal", 'role->"form") {
+
+        @inputText(UsersLibraryForm("tempo"), '_label -> "", 'style -> "display: none")
+        @inputText(UsersLibraryForm("tempo2"), '_label -> "", 'style -> "display: none")
+        @inputText(UsersLibraryForm("tempo3"), '_label -> "", 'style -> "display: none")
+
+
+
+	<!-- Add a submit button -->
+  <div class="actions">
+      <input type="submit" value="Save" class="btn btn-primary">
+			<a href="@routes.HomeController.returnUpdate()">
+				
+				<button class="btn btn-warning">Cancel</button>
+	  		</a>
+  </div>
+	} <!-- End Form definition -->
+}
+-- End of page content -->
