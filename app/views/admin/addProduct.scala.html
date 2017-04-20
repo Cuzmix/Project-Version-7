@@ -28,11 +28,11 @@
 		@inputText(addProductForm("id"), '_label -> "", 'hidden -> "hidden")
 
 	<!-- Add a submit button -->
-  <div class="actions">
-      <input type="submit" value="Save" class="btn btn-primary">
-			<a href="@routes.AdminController.products()"><button class="btn btn-warning">Cancel</button>
-	  		</a>
-  </div>
+	<div class="actions">
+		<input type="submit" value="Save" class="btn btn-primary">
+		<a href="@routes.AdminController.products()"><button  type="button" value=@routes.AdminController.products() class="btn btn-warning">Cancel</button>
+		</a>
+	</div>
 	} <!-- End Form definition -->
 
 } <!-- End of page content -->

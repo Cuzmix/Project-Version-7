@@ -10,7 +10,11 @@
                 <table class="table table-bordered table-hover table-condensed">
                     <thead>
                             <!-- The header row-->
+
+                        <h1>Users Transactions</h1>
+
                         <tr>
+
                             <th>ID</th>
                             <th>Product ID</th>
                             <th>User Email</th>
@@ -29,10 +33,6 @@
                                 <td>@p.getDate_transaction</td>
                                 <td>@p.getExpiring_date</td>
 
-                                <td>
-                                    <a href="@routes.HomeController.updateTransaction(p.getId)" class="btn-xs btn-danger">
-                                        <span class="glyphicon glyphicon-pencil"></span></a>
-                                </td>
 
                             </tr>
                         } <!-- End of For loop -->

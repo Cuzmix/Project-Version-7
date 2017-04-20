@@ -5,8 +5,8 @@
 
 @* helpers will be used to create the form dynamically, though static HTML form element also work. *@
 
-@main("Confirm Reservation", user) {
-	<h3>Reservation</h3>
+@main("Confirm Loan", user) {
+	<h3>Three Day Loan</h3>
 	
 	<!-- Use the views.html.helpers package to create the form -->
 	@form(action = routes.HomeController.ThreeDayLoan(user.getEmail), 'class -> "form-horizontal", 'role->"form") {
@@ -17,11 +17,11 @@
 
         <p> Three Day loan </p>
 	<!-- Add a submit button -->
-  <div class="actions">
-      <input type="submit" value="Save" class="btn btn-primary">
-			<a href="@routes.HomeController.rent()"><button class="btn btn-warning">Cancel</button>
-	  		</a>
-  </div>
+	<div class="actions">
+		<input type="submit" value="Save" class="btn btn-primary">
+		<a href="@routes.HomeController.rent()"><button  type="button" value= @routes.HomeController.rent() class="btn btn-warning">Cancel</button>
+		</a>
+	</div>
 	} <!-- End Form definition -->
 
 } <!-- End of page content -->

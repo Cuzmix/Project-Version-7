@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/ifeanyi/Documents/YourMAMAv7/StrengthFromWithin/conf/routes
-// @DATE:Wed Apr 19 14:15:20 IST 2017
+// @SOURCE:/home/ifeanyi/Documents/back up of ver7/Project Version 7/Project Version 7/conf/routes
+// @DATE:Thu Apr 20 15:48:44 IST 2017
 
 
 package router {

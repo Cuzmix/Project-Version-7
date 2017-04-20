@@ -1,4 +1,4 @@
-[0m[[31merror[0m] [0m/home/wdd/webapps/projectV5/app/views/creditcard.scala.html:54: Expected '"' but found 'EOF'[0m
-[0m[[31merror[0m] [0m</html>[0m
-[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0m/home/ifeanyi/Documents/Project Version 7/Project Version 7/app/views/profileUpdate.scala.html:28: Not parsed?[0m
+[0m[[31merror[0m] [0m} <!-- End of page content -->[0m
+[0m[[31merror[0m] [0m^[0m
 [0m[[31merror[0m] [0m(compile:[31mtwirlCompileTemplates[0m) Twirl compilation failed[0m

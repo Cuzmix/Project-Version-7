@@ -57,10 +57,11 @@ Seq[Any](format.raw/*4.84*/("""
 				
 				<button class="btn btn-warning">Cancel</button>
 	  		</a>
+
   </div>
-	""")))}),format.raw/*30.3*/(""" """),format.raw/*30.4*/("""<!-- End Form definition -->
-""")))}),format.raw/*31.2*/("""
-"""),format.raw/*32.1*/("""-- End of page content -->"""))
+	""")))}),format.raw/*31.3*/(""" """),format.raw/*31.4*/("""<!-- End Form definition -->
+""")))}),format.raw/*32.2*/("""
+"""),format.raw/*33.1*/("""-- End of page content -->"""))
       }
     }
   }
@@ -81,11 +82,11 @@ Seq[Any](format.raw/*4.84*/("""
 object returnUpdate extends returnUpdate_Scope0.returnUpdate_Scope1.returnUpdate
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 19 14:15:21 IST 2017
-                  SOURCE: /home/ifeanyi/Documents/YourMAMAv7/StrengthFromWithin/app/views/returnUpdate.scala.html
-                  HASH: a6e8491c9fed2299db73af3152699b3b656fc3dd
-                  MATRIX: 859->109|1036->191|1066->294|1095->298|1139->334|1178->336|1207->338|1328->433|1449->544|1490->546|1528->557|1627->635|1664->645|1764->724|1801->734|1901->813|1933->818|2091->949|2106->955|2157->985|2268->1066|2296->1067|2356->1097|2384->1098
-                  LINES: 30->4|35->4|37->6|40->9|40->9|40->9|41->10|45->14|45->14|45->14|47->16|47->16|48->17|48->17|49->18|49->18|53->22|56->25|56->25|56->25|61->30|61->30|62->31|63->32
+                  DATE: Wed Apr 19 17:10:47 IST 2017
+                  SOURCE: /home/ifeanyi/Documents/Project Version 7/Project Version 7/app/views/returnUpdate.scala.html
+                  HASH: 93059baf548720c4355700d83c424238da36dd60
+                  MATRIX: 859->109|1036->191|1066->294|1095->298|1139->334|1178->336|1207->338|1328->433|1449->544|1490->546|1528->557|1627->635|1664->645|1764->724|1801->734|1901->813|1933->818|2091->949|2106->955|2157->985|2269->1067|2297->1068|2357->1098|2385->1099
+                  LINES: 30->4|35->4|37->6|40->9|40->9|40->9|41->10|45->14|45->14|45->14|47->16|47->16|48->17|48->17|49->18|49->18|53->22|56->25|56->25|56->25|62->31|62->31|63->32|64->33
                   -- GENERATED --
               */
           

@@ -4,7 +4,7 @@
 		module="shop$sources_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20170419143148"
+		publication="20170420154402"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

@@ -36,8 +36,8 @@ Seq[Any](format.raw/*4.76*/("""
 
 """),format.raw/*6.102*/("""
 
-"""),_display_(/*8.2*/main("Confirm Reservation", user)/*8.35*/ {_display_(Seq[Any](format.raw/*8.37*/("""
-	"""),format.raw/*9.2*/("""<h3>Reservation</h3>
+"""),_display_(/*8.2*/main("Confirm Loan", user)/*8.28*/ {_display_(Seq[Any](format.raw/*8.30*/("""
+	"""),format.raw/*9.2*/("""<h3>Seven Day Loan</h3>
 	
 	<!-- Use the views.html.helpers package to create the form -->
 	"""),_display_(/*12.3*/form(action = routes.HomeController.SevenDayLoan(user.getEmail), 'class -> "form-horizontal", 'role->"form")/*12.111*/ {_display_(Seq[Any](format.raw/*12.113*/("""
@@ -48,11 +48,11 @@ Seq[Any](format.raw/*4.76*/("""
 
         """),format.raw/*18.9*/("""<p> Seven Day loan </p>
 	<!-- Add a submit button -->
-  <div class="actions">
-      <input type="submit" value="Save" class="btn btn-primary">
-			<a href=""""),_display_(/*22.14*/routes/*22.20*/.HomeController.rent()),format.raw/*22.42*/(""""><button class="btn btn-warning">Cancel</button>
-	  		</a>
-  </div>
+	<div class="actions">
+		<input type="submit" value="Save" class="btn btn-primary">
+		<a href=""""),_display_(/*22.13*/routes/*22.19*/.HomeController.rent()),format.raw/*22.41*/(""""><button  type="button" value= """),_display_(/*22.74*/routes/*22.80*/.HomeController.rent()),format.raw/*22.102*/(""" """),format.raw/*22.103*/("""class="btn btn-warning">Cancel</button>
+		</a>
+	</div>
 	""")))}),format.raw/*25.3*/(""" """),format.raw/*25.4*/("""<!-- End Form definition -->
 
 """)))}),format.raw/*27.2*/(""" """),format.raw/*27.3*/("""<!-- End of page content -->
@@ -78,11 +78,11 @@ Seq[Any](format.raw/*4.76*/("""
 object sevenday extends sevenday_Scope0.sevenday_Scope1.sevenday
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 19 14:15:21 IST 2017
-                  SOURCE: /home/ifeanyi/Documents/YourMAMAv7/StrengthFromWithin/app/views/sevenday.scala.html
-                  HASH: 0c964b933a0116455d0f337a5887b33e20d428c0
-                  MATRIX: 841->109|1010->183|1040->286|1068->289|1109->322|1148->324|1176->326|1291->415|1409->523|1450->525|1480->528|1566->588|1664->665|1694->669|1789->743|1819->747|1916->823|1953->833|2136->989|2151->995|2194->1017|2295->1088|2323->1089|2384->1120|2412->1121
-                  LINES: 30->4|35->4|37->6|39->8|39->8|39->8|40->9|43->12|43->12|43->12|44->13|45->14|45->14|46->15|46->15|47->16|47->16|49->18|53->22|53->22|53->22|56->25|56->25|58->27|58->27
+                  DATE: Wed Apr 19 17:10:47 IST 2017
+                  SOURCE: /home/ifeanyi/Documents/Project Version 7/Project Version 7/app/views/sevenday.scala.html
+                  HASH: 698f6193d9d8e41a024c0341524c89242476ff3b
+                  MATRIX: 841->109|1010->183|1040->286|1068->289|1102->315|1141->317|1169->319|1287->411|1405->519|1446->521|1476->524|1562->584|1660->661|1690->665|1785->739|1815->743|1912->819|1949->829|2126->979|2141->985|2184->1007|2244->1040|2259->1046|2303->1068|2333->1069|2420->1126|2448->1127|2509->1158|2537->1159
+                  LINES: 30->4|35->4|37->6|39->8|39->8|39->8|40->9|43->12|43->12|43->12|44->13|45->14|45->14|46->15|46->15|47->16|47->16|49->18|53->22|53->22|53->22|53->22|53->22|53->22|53->22|56->25|56->25|58->27|58->27
                   -- GENERATED --
               */
           

@@ -59,11 +59,11 @@ Seq[Any](format.raw/*4.76*/("""
 		"""),_display_(/*28.4*/inputText(addProductForm("id"), '_label -> "", 'hidden -> "hidden")),format.raw/*28.71*/("""
 
 	"""),format.raw/*30.2*/("""<!-- Add a submit button -->
-  <div class="actions">
-      <input type="submit" value="Save" class="btn btn-primary">
-			<a href=""""),_display_(/*33.14*/routes/*33.20*/.AdminController.products()),format.raw/*33.47*/(""""><button class="btn btn-warning">Cancel</button>
-	  		</a>
-  </div>
+	<div class="actions">
+		<input type="submit" value="Save" class="btn btn-primary">
+		<a href=""""),_display_(/*33.13*/routes/*33.19*/.AdminController.products()),format.raw/*33.46*/(""""><button  type="button" value="""),_display_(/*33.78*/routes/*33.84*/.AdminController.products()),format.raw/*33.111*/(""" """),format.raw/*33.112*/("""class="btn btn-warning">Cancel</button>
+		</a>
+	</div>
 	""")))}),format.raw/*36.3*/(""" """),format.raw/*36.4*/("""<!-- End Form definition -->
 
 """)))}),format.raw/*38.2*/(""" """),format.raw/*38.3*/("""<!-- End of page content -->
@@ -89,11 +89,11 @@ Seq[Any](format.raw/*4.76*/("""
 object addProduct extends addProduct_Scope0.addProduct_Scope1.addProduct
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 19 14:15:21 IST 2017
-                  SOURCE: /home/ifeanyi/Documents/YourMAMAv7/StrengthFromWithin/app/views/admin/addProduct.scala.html
-                  HASH: 920c2df10f0d2d0d553ee51cd2452ce82d40f05b
-                  MATRIX: 853->109|1022->183|1052->286|1080->289|1092->294|1131->325|1170->327|1198->329|1319->424|1429->524|1470->526|1503->533|1601->610|1631->614|1743->705|1774->710|1995->911|2025->915|2125->994|2155->998|2255->1077|2286->1081|2371->1140|2459->1207|2489->1210|2647->1341|2662->1347|2710->1374|2811->1445|2839->1446|2900->1477|2928->1478
-                  LINES: 30->4|35->4|37->6|39->8|39->8|39->8|39->8|40->9|43->12|43->12|43->12|45->14|45->14|46->15|46->15|48->17|54->23|55->24|55->24|56->25|56->25|58->27|59->28|59->28|61->30|64->33|64->33|64->33|67->36|67->36|69->38|69->38
+                  DATE: Thu Apr 20 15:48:45 IST 2017
+                  SOURCE: /home/ifeanyi/Documents/back up of ver7/Project Version 7/Project Version 7/app/views/admin/addProduct.scala.html
+                  HASH: e4c71f55d147cb97b416b8c713eec201de428995
+                  MATRIX: 853->109|1022->183|1052->286|1080->289|1092->294|1131->325|1170->327|1198->329|1319->424|1429->524|1470->526|1503->533|1601->610|1631->614|1743->705|1774->710|1995->911|2025->915|2125->994|2155->998|2255->1077|2286->1081|2371->1140|2459->1207|2489->1210|2641->1335|2656->1341|2704->1368|2763->1400|2778->1406|2827->1433|2857->1434|2944->1491|2972->1492|3033->1523|3061->1524
+                  LINES: 30->4|35->4|37->6|39->8|39->8|39->8|39->8|40->9|43->12|43->12|43->12|45->14|45->14|46->15|46->15|48->17|54->23|55->24|55->24|56->25|56->25|58->27|59->28|59->28|61->30|64->33|64->33|64->33|64->33|64->33|64->33|64->33|67->36|67->36|69->38|69->38
                   -- GENERATED --
               */
           

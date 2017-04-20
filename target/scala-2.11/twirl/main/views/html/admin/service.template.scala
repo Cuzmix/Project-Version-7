@@ -65,8 +65,8 @@ Seq[Any](format.raw/*1.95*/("""
 object service extends service_Scope0.service
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 19 14:15:21 IST 2017
-                  SOURCE: /home/ifeanyi/Documents/YourMAMAv7/StrengthFromWithin/app/views/admin/service.scala.html
+                  DATE: Wed Apr 19 15:11:26 IST 2017
+                  SOURCE: /home/ifeanyi/Documents/Project Version 7/Project Version 7/app/views/admin/service.scala.html
                   HASH: c44c2459a322625f0dce0d3f7222d2f532ffd5f0
                   MATRIX: 810->1|998->94|1026->96|1086->129|1114->130|1160->149|1188->150|1216->151|1263->173|1275->178|1310->205|1349->207|1381->213|1574->379|1589->385|1637->412|1798->546|1813->552|1858->576
                   LINES: 27->1|32->1|34->3|34->3|34->3|34->3|34->3|34->3|35->4|35->4|35->4|35->4|37->6|41->10|41->10|41->10|44->13|44->13|44->13

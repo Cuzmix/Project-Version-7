@@ -36,8 +36,8 @@ Seq[Any](format.raw/*4.75*/("""
 
 """),format.raw/*6.102*/("""
 
-"""),_display_(/*8.2*/main("Confirm Reservation", user)/*8.35*/ {_display_(Seq[Any](format.raw/*8.37*/("""
-	"""),format.raw/*9.2*/("""<h3>Reservation</h3>
+"""),_display_(/*8.2*/main("ConfirmLoan", user)/*8.27*/ {_display_(Seq[Any](format.raw/*8.29*/("""
+	"""),format.raw/*9.2*/("""<h3>Five Day Loan</h3>
 	
 	<!-- Use the views.html.helpers package to create the form -->
 	"""),_display_(/*12.3*/form(action = routes.HomeController.FiveDayLoan(user.getEmail), 'class -> "form-horizontal", 'role->"form")/*12.110*/ {_display_(Seq[Any](format.raw/*12.112*/("""
@@ -48,11 +48,11 @@ Seq[Any](format.raw/*4.75*/("""
 
         """),format.raw/*18.9*/("""<p> Five Day loan </p>
 	<!-- Add a submit button -->
-  <div class="actions">
-      <input type="submit" value="Save" class="btn btn-primary">
-			<a href=""""),_display_(/*22.14*/routes/*22.20*/.HomeController.rent()),format.raw/*22.42*/(""""><button class="btn btn-warning">Cancel</button>
-	  		</a>
-  </div>
+	<div class="actions">
+		<input type="submit" value="Save" class="btn btn-primary">
+		<a href=""""),_display_(/*22.13*/routes/*22.19*/.HomeController.rent()),format.raw/*22.41*/(""""><button  type="button" value= """),_display_(/*22.74*/routes/*22.80*/.HomeController.rent()),format.raw/*22.102*/(""" """),format.raw/*22.103*/("""class="btn btn-warning">Cancel</button>
+		</a>
+	</div>
 	""")))}),format.raw/*25.3*/(""" """),format.raw/*25.4*/("""<!-- End Form definition -->
 
 """)))}),format.raw/*27.2*/(""" """),format.raw/*27.3*/("""<!-- End of page content -->
@@ -78,11 +78,11 @@ Seq[Any](format.raw/*4.75*/("""
 object fiveday extends fiveday_Scope0.fiveday_Scope1.fiveday
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 19 14:15:20 IST 2017
-                  SOURCE: /home/ifeanyi/Documents/YourMAMAv7/StrengthFromWithin/app/views/fiveday.scala.html
-                  HASH: d00c120f93d954898e39a46ca2c2fca81ad7de3b
-                  MATRIX: 838->109|1006->182|1036->285|1064->288|1105->321|1144->323|1172->325|1287->414|1404->521|1445->523|1475->526|1561->586|1658->662|1688->666|1782->739|1812->743|1908->818|1945->828|2127->983|2142->989|2185->1011|2286->1082|2314->1083|2375->1114|2403->1115
-                  LINES: 30->4|35->4|37->6|39->8|39->8|39->8|40->9|43->12|43->12|43->12|44->13|45->14|45->14|46->15|46->15|47->16|47->16|49->18|53->22|53->22|53->22|56->25|56->25|58->27|58->27
+                  DATE: Wed Apr 19 17:10:47 IST 2017
+                  SOURCE: /home/ifeanyi/Documents/Project Version 7/Project Version 7/app/views/fiveday.scala.html
+                  HASH: 73f902f681cfb0c9ea3537b7aca98b0ec14ffd4b
+                  MATRIX: 838->109|1006->182|1036->285|1064->288|1097->313|1136->315|1164->317|1281->408|1398->515|1439->517|1469->520|1555->580|1652->656|1682->660|1776->733|1806->737|1902->812|1939->822|2115->971|2130->977|2173->999|2233->1032|2248->1038|2292->1060|2322->1061|2409->1118|2437->1119|2498->1150|2526->1151
+                  LINES: 30->4|35->4|37->6|39->8|39->8|39->8|40->9|43->12|43->12|43->12|44->13|45->14|45->14|46->15|46->15|47->16|47->16|49->18|53->22|53->22|53->22|53->22|53->22|53->22|53->22|56->25|56->25|58->27|58->27
                   -- GENERATED --
               */
           

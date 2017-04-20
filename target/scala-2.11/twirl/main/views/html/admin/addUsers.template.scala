@@ -51,16 +51,15 @@ Seq[Any](format.raw/*5.29*/("""
 	"""),_display_(/*20.3*/inputText(addUsersForm("points"), '_label -> "Points",'class -> "form-control")),format.raw/*20.82*/("""
 
 	"""),format.raw/*22.2*/("""<!-- Add a submit button -->
-  <div class="actions">
-      <input type="submit" value="Save" class="btn btn-primary">
-			<a href=""""),_display_(/*25.14*/routes/*25.20*/.AdminController.users(0)),format.raw/*25.45*/("""">
-				
-				<button class="btn btn-warning">Cancel</button>
-	  		</a>
-  </div>
-	""")))}),format.raw/*30.3*/(""" """),format.raw/*30.4*/("""<!-- End Form definition -->
+	<div class="actions">
+		<input type="submit" value="Save" class="btn btn-primary">
+		<a href=""""),_display_(/*25.13*/routes/*25.19*/.AdminController.users(0)),format.raw/*25.44*/(""""><button  type="button" value="""),_display_(/*25.76*/routes/*25.82*/.AdminController.users(0)),format.raw/*25.107*/(""" """),format.raw/*25.108*/("""class="btn btn-warning">Cancel</button>
+		</a>
+	</div>
 
-""")))}),format.raw/*32.2*/(""" """),format.raw/*32.3*/("""<!-- End of page content -->"""))
+	""")))}),format.raw/*29.3*/(""" """),format.raw/*29.4*/("""<!-- End Form definition -->
+
+""")))}),format.raw/*31.2*/(""" """),format.raw/*31.3*/("""<!-- End of page content -->"""))
       }
     }
   }
@@ -81,11 +80,11 @@ Seq[Any](format.raw/*5.29*/("""
 object addUsers extends addUsers_Scope0.addUsers_Scope1.addUsers
               /*
                   -- GENERATED --
-                  DATE: Wed Apr 19 14:15:21 IST 2017
-                  SOURCE: /home/ifeanyi/Documents/YourMAMAv7/StrengthFromWithin/app/views/admin/addUsers.scala.html
-                  HASH: 05dfee213c0a5a9c4c62119de54f5a9eb918847a
-                  MATRIX: 851->109|1023->186|1053->289|1081->292|1093->297|1130->326|1169->328|1198->330|1319->425|1427->523|1468->525|1498->529|1587->597|1619->603|1715->678|1747->684|1849->765|1878->768|1978->847|2010->853|2114->936|2143->939|2243->1018|2273->1021|2431->1152|2446->1158|2492->1183|2603->1264|2631->1265|2692->1296|2720->1297
-                  LINES: 30->4|36->5|38->7|40->9|40->9|40->9|40->9|41->10|44->13|44->13|44->13|46->15|46->15|47->16|47->16|48->17|48->17|49->18|49->18|50->19|50->19|51->20|51->20|53->22|56->25|56->25|56->25|61->30|61->30|63->32|63->32
+                  DATE: Wed Apr 19 17:16:37 IST 2017
+                  SOURCE: /home/ifeanyi/Documents/Project Version 7/Project Version 7/app/views/admin/addUsers.scala.html
+                  HASH: e49ab209e6ee4fa8e4d1ce1d0e20cea86c1fa49a
+                  MATRIX: 851->109|1023->186|1053->289|1081->292|1093->297|1130->326|1169->328|1198->330|1319->425|1427->523|1468->525|1498->529|1587->597|1619->603|1715->678|1747->684|1849->765|1878->768|1978->847|2010->853|2114->936|2143->939|2243->1018|2273->1021|2425->1146|2440->1152|2486->1177|2545->1209|2560->1215|2607->1240|2637->1241|2725->1299|2753->1300|2814->1331|2842->1332
+                  LINES: 30->4|36->5|38->7|40->9|40->9|40->9|40->9|41->10|44->13|44->13|44->13|46->15|46->15|47->16|47->16|48->17|48->17|49->18|49->18|50->19|50->19|51->20|51->20|53->22|56->25|56->25|56->25|56->25|56->25|56->25|56->25|60->29|60->29|62->31|62->31
                   -- GENERATED --
               */
           

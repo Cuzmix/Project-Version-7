@@ -23,7 +23,7 @@ import models.users.Users;
 public class HomeController extends Controller {
 
     // Declare a private FormFactory instance
-    private static long idmake = 0;
+
     private FormFactory formFactory;
 
 
@@ -73,22 +73,8 @@ public class HomeController extends Controller {
             }
 
             return ok(products.render(productsList, categoriesList, getUserFromSession()));
-        
+
     }
-
-
-    // Render and return  the add new product page
-    // The page will load and display an empty add product form
-//    @Security.Authenticated(Secured.class)
-//    public Result addProduct() {
-//
-//        // Create a form by wrapping the Product class
-//        // in a FormFactory form instance
-//        Form<Product> addProductForm = formFactory.form(Product.class);
-//
-//        // Render the Add Product View, passing the form object
-//        return ok(addProduct.render(addProductForm, getUserFromSession()));
-//    }
 
 
     public Result rent(Long cat) {
@@ -191,17 +177,17 @@ public class HomeController extends Controller {
         // Create a form by wrapping the Product class
         // in a FormFactory form instance
         Form<Product> addReserveForm = formFactory.form(Product.class);
-       
+
         // Render the Add Product View, passing the form object
         return ok(reserve.render(addReserveForm, getUserFromSession()));
     }
-   
+
     public Result threeday() {
 
         // Create a form by wrapping the Product class
         // in a FormFactory form instance
         Form<Product> addThreeDayForm = formFactory.form(Product.class);
-       
+
         // Render the Add Product View, passing the form object
         return ok(threeday.render(addThreeDayForm, getUserFromSession()));
     }
@@ -211,7 +197,7 @@ public class HomeController extends Controller {
         // Create a form by wrapping the Product class
         // in a FormFactory form instance
         Form<Product> addFiveDayForm = formFactory.form(Product.class);
-       
+
         // Render the Add Product View, passing the form object
         return ok(fiveday.render(addFiveDayForm, getUserFromSession()));
     }
@@ -221,7 +207,7 @@ public class HomeController extends Controller {
         // Create a form by wrapping the Product class
         // in a FormFactory form instance
         Form<Product> addSevenDayForm = formFactory.form(Product.class);
-       
+
         // Render the Add Product View, passing the form object
         return ok(sevenday.render(addSevenDayForm, getUserFromSession()));
     }
@@ -230,16 +216,23 @@ public class HomeController extends Controller {
 
 
 
+
+
+
+
+
+
+
     //################### user loan/reserve Functionality ######################
 
     @Security.Authenticated(Secured.class)
     @Transactional
     public Result addReserveSubmit() {
-        
+
         // Create a product form object (to hold submitted data)
         // 'Bind' the object to the submitted form (this copies the filled form)
         Form<Product> newProductForm = formFactory.form(Product.class).bindFromRequest();
-      
+
         // Check for errors (based on Product class annotations)
 //        if(newProductForm.hasErrors()) {
 //            // Display the form again
@@ -257,11 +250,11 @@ public class HomeController extends Controller {
         // Product already exists so update
         else if (p.getId() != null) {
 
-            
-       if(p.getStock() == 0 ){ 
+
+       if(p.getStock() == 0 ){
             flash("success", "Item: " + p.getName() + " has been reserved");
             return redirect(controllers.routes.HomeController.rent(0));
-           
+
             // if the user enters the reserve key
             // reserve the item
          } else if(p.getStock() > 0) {
@@ -270,9 +263,9 @@ public class HomeController extends Controller {
             return redirect(controllers.routes.HomeController.rent(0));
             }
      }
-         return redirect(controllers.routes.HomeController.rent(0));           
+         return redirect(controllers.routes.HomeController.rent(0));
 }
-        
+
 
     @Security.Authenticated(Secured.class)
     @Transactional
@@ -293,13 +286,9 @@ public class HomeController extends Controller {
 
 
             usl = new Users_library(0,ps1.getId(),getUserFromSession().getEmail(),TransactionDate,ExpireDate,3,0,0);
-           //this.idmake = idmake+1;
+
             usl.save();
 
-//             if(newProductForm.hasErrors()) {
-//            // Display the form again
-//            return badRequest(addProduct.render(newProductForm, getUserFromSession()));
-//        }
 
         // Extract the product from the form object
         Product p = newProductForm.get();
@@ -320,7 +309,7 @@ public class HomeController extends Controller {
                 {
                 flash("success",p.getName() + " not loaned insufficient points");
                  return redirect(controllers.routes.HomeController.rent(0));
-          
+
                 }else
                 {
                  p.setStock( p.getStock() - 1);
@@ -332,7 +321,7 @@ public class HomeController extends Controller {
                  return redirect(controllers.routes.HomeController.rent(0));
                 }
 
-                
+
             }else if(p.getStock() == 0)
             {
                 flash("success","item low in stock");
@@ -361,13 +350,8 @@ public class HomeController extends Controller {
 
 
             usl = new Users_library((long) 0,ps1.getId(),getUserFromSession().getEmail(),TransactionDate,ExpireDate,0,5,0);
-           //this.idmake = idmake+1;
-            usl.save();
 
-//             if(newProductForm.hasErrors()) {
-//            // Display the form again
-//            return badRequest(addProduct.render(newProductForm, getUserFromSession()));
-//        }
+            usl.save();
 
         // Extract the product from the form object
         Product p = newProductForm.get();
@@ -430,13 +414,9 @@ public class HomeController extends Controller {
 
 
             usl = new Users_library((long) 0,ps1.getId(),getUserFromSession().getEmail(),TransactionDate,ExpireDate,0,0,7);
-           //this.idmake = idmake+1;
+
             usl.save();
 
-//             if(newProductForm.hasErrors()) {
-//            // Display the form again
-//            return badRequest(addProduct.render(newProductForm, getUserFromSession()));
-//        }
 
         // Extract the product from the form object
         Product p = newProductForm.get();
@@ -457,7 +437,7 @@ public class HomeController extends Controller {
                 {
                  flash("success",p.getName() + " not loaned insufficient points");
                  return redirect(controllers.routes.HomeController.rent(0));
-          
+
                 }else
                 {
                  p.setStock( p.getStock() - 1);
@@ -477,6 +457,9 @@ public class HomeController extends Controller {
         return redirect(controllers.routes.HomeController.rent(0));
     }
 //##################### END OF  USER loan/reserve FUNCTIONALITY  ###############################################
+
+
+
 
 
 
@@ -575,46 +558,58 @@ public class HomeController extends Controller {
 
 
     @Transactional
-    public Result addReturnSubmit(String email){
-        Form<Users_library>UserLibraryForm =formFactory.form(Users_library.class).bindFromRequest();
+    public Result addReturnSubmit(String email) {
+        Form<Users_library> UserLibraryForm = formFactory.form(Users_library.class).bindFromRequest();
         Users_library ul = UserLibraryForm.get();
-         Users un = Users.find.byId(email);
+        Users un = Users.find.byId(email);
 
-        ul.setReturned("true");
         ul.update();
-        if(ul.getTempo() == 3)
-        {
-            un.givePoints(30);
+        if (ul.getTempo() == 3) {
+            if (un.getPoints() >= 100) {
+                un.setPoints(100);
+                flash("success", "points already 100");
+                return redirect(routes.HomeController.profile(0));
+
+            } else
+
+                un.givePoints(30);
+
+            ul.setReturned("true");
             un.update();
-            flash("success","item has been returned 30 points refunded");
-            return redirect(routes.HomeController.profile(0));
-        }
-        else if(ul.getTempo2() == 5)
-        {
-            un.givePoints(50);
-            un.update();
-            flash("success","item has been returned 50 points refunded");
-            return redirect(routes.HomeController.profile(0));
-        }else if(ul.getTempo3() == 7)
-        {
-            un.givePoints(100);
-            un.update();
-            flash("success","item has been returned 100 points refunded");
+            flash("success", "item has been returned 30 points refunded");
             return redirect(routes.HomeController.profile(0));
         }
 
+        //--------------------------------------------------------------
+        else if (ul.getTempo2() == 5) {
+            if (un.getPoints() >= 100) {
+                flash("success", "points already 100");
+                return redirect(routes.HomeController.profile(0));
+
+            } else {
+                un.givePoints(50);
+                un.update();
+                flash("success", "item has been returned 50 points refunded");
+                return redirect(routes.HomeController.profile(0));
+            }
+            //--------------------------------------------------------------
+
+        } else if (ul.getTempo3() == 7) {
+            if (un.getPoints() >= 100) {
+                flash("success", "points already 100");
+                return redirect(routes.HomeController.profile(0));
+
+            } else {
+                un.givePoints(100);
+                un.update();
+                flash("success", "item has been returned 100 points refunded");
+                return redirect(routes.HomeController.profile(0));
+            }
+
+
+        }
         return redirect(routes.HomeController.profile(0));
     }
-
-
-
-
-
-
-
-
-
-
     //################## END OF USER SIGN UP##########################################
 
 
@@ -626,30 +621,6 @@ public class HomeController extends Controller {
 
 
     //################## ADMIN  ##########################################
-
-    // Update a product by ID
-    // called when edit button is pressed
-//    @Security.Authenticated(Secured.class)
-//    @Transactional
-//    public Result updateProduct(Long id) {
-//
-//        Product p;
-//        Form<Product> productForm;
-//
-//        try {
-//            // Find the product by id
-//            p = Product.find.byId(id);
-//
-//            // Create a form based on the Product class and fill using p
-//            productForm = formFactory.form(Product.class).fill(p);
-//
-//            } catch (Exception ex) {
-//                // Display an error message or page
-//                return badRequest("error");
-//        }
-//        // Render the updateProduct view - pass form as parameter
-//        return ok(addProduct.render(productForm, getUserFromSession()));
-//    }
 
     @Transactional
     public Result updateProfile(String email) {
@@ -680,6 +651,7 @@ public class HomeController extends Controller {
         // Render the updateProduct view - pass form as parameter
         return ok(profileUpdate.render(userForm, getUserFromSession()));
     }
+
 
     public Result updateTransaction(Long id){
         Users_library ul;
@@ -747,15 +719,15 @@ public class HomeController extends Controller {
 
         Product p;
         Form<Product> productForm;
-        
+
         try {
             // Find the product by id
             p = Product.find.byId(id);
-           
+
             // Create a form based on the Product class and fill using p
             productForm = formFactory.form(Product.class).fill(p);
-          
-        
+
+
             } catch (Exception ex) {
                 // Display an error message or page
                 return badRequest("error");
@@ -768,7 +740,7 @@ public class HomeController extends Controller {
 
         Product p;
         Form<Product> productForm;
-        
+
         try {
             // Find the product by id
             p = Product.find.byId(id);
@@ -776,11 +748,11 @@ public class HomeController extends Controller {
 
 
 
-           
+
             // Create a form based on the Product class and fill using p
             productForm = formFactory.form(Product.class).fill(p);
-          
-        
+
+
             } catch (Exception ex) {
                 // Display an error message or page
                 return badRequest("error");
@@ -794,15 +766,15 @@ public class HomeController extends Controller {
 
         Product p;
         Form<Product> productForm;
-        
+
         try {
             // Find the product by id
             p = Product.find.byId(id);
-           
+
             // Create a form based on the Product class and fill using p
             productForm = formFactory.form(Product.class).fill(p);
-          
-        
+
+
             } catch (Exception ex) {
                 // Display an error message or page
                 return badRequest("error");
